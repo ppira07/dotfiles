@@ -6,6 +6,8 @@ if has('vim_starting')
   call neobundle#rc(expand('~/vim/bundle/'))
 endif
 
+NeoBundle 'scrooloose/nerdtree'
+
 syntax on
 filetype indent plugin on
 
@@ -25,3 +27,12 @@ set expandtab
 set tabstop=4
 set shiftwidth=2
 set softtabstop=2
+
+
+" For nerdtree
+nmap <silent> <Space>e :NERDTreeToggle<CR>
+
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+let g:NERDTreeShowHidden=1
