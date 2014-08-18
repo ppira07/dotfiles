@@ -1,3 +1,5 @@
 [user]
-	name = hirano
-	email = yprrrrr.mmmmkp@gmail.com
+  name = hirano
+  email = yprrrrr.mmmmkp@gmail.com
+[color]
+  ui = true
