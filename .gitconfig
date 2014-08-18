@@ -3,3 +3,10 @@
   email = yprrrrr.mmmmkp@gmail.com
 [color]
   ui = true
+[alias]
+  co = checkout
+  ci = commit -v
+  br = branch
+  d  = diff
+  ds = diff --staged
+  st = status -sb
